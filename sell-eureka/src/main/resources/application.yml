@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: sell-eureka
+eureka:
+  client:
+    register-with-eureka: false # 表示是否注册自身到eureka服务器
+   # fetch-registry: false # 是否从eureka上获取注册信息
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/
+server:
+  port: 8761
