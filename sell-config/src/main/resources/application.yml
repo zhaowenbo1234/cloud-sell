@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: sell-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/JiShiMoWang_admin/cloud-demo-config.git
+#          username: 用户名
+#          password: 密码
+#          basedir: 本地保存的地址，采用默认的即可
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # 开启全部端口，默认只开启了，"info", "health"
