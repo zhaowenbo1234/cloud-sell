@@ -1,4 +1,4 @@
-package com.zhaowb.cloudsell.listener;
+package com.zhaowb.selleureka.listener;
 
 import com.netflix.discovery.shared.Applications;
 import com.netflix.eureka.EurekaServerContextHolder;

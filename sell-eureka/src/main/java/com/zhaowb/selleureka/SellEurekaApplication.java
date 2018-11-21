@@ -1,4 +1,4 @@
-package com.zhaowb.cloudsell;
+package com.zhaowb.selleureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,8 +12,8 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  */
 @EnableEurekaServer
 @SpringBootApplication
-public class CloudSellApplication {
+public class SellEurekaApplication {
     public static void main(String[] args) {
-        SpringApplication.run(CloudSellApplication.class,args);
+        SpringApplication.run(SellEurekaApplication.class,args);
     }
 }
