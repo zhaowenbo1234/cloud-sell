@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+*.idea
+# 过滤模块下的*.iml文件
+**/*.iml
+/.idea/**
+/sell-config/sell-config.iml
+

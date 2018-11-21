@@ -3,7 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cloud-sell.iml" filepath="$PROJECT_DIR$/cloud-sell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sell-config/sell-config.iml" filepath="$PROJECT_DIR$/sell-config/sell-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/sell-eureka/sell-eureka.iml" filepath="$PROJECT_DIR$/sell-eureka/sell-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sell-product/sell-product.iml" filepath="$PROJECT_DIR$/sell-product/sell-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sell-product/sell-product-client/sell-product-client.iml" filepath="$PROJECT_DIR$/sell-product/sell-product-client/sell-product-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sell-product/sell-product-common/sell-product-common.iml" filepath="$PROJECT_DIR$/sell-product/sell-product-common/sell-product-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sell-product/sell-product-server/sell-product-server.iml" filepath="$PROJECT_DIR$/sell-product/sell-product-server/sell-product-server.iml" />
     </modules>
   </component>
 </project>
