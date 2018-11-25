@@ -13,10 +13,11 @@ import java.util.List;
  * @date 2018/11/23 15:42
  */
 @Repository
-public interface ProductCategoryRepository extends JpaRepository<ProductCategory,Integer> {
+public interface ProductCategoryRepository extends JpaRepository<ProductCategory, Integer> {
 
     /**
      * 根据商品类目编号查询 商品类目
+     *
      * @param categoryTypeList 商品类目编号列表
      * @return
      */

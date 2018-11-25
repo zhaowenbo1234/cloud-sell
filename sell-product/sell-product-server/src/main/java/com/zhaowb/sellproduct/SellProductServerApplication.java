@@ -13,6 +13,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SellProductServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SellProductServerApplication.class,args);
+        SpringApplication.run(SellProductServerApplication.class, args);
     }
 }

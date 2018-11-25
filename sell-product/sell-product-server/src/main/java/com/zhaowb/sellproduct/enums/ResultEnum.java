@@ -15,14 +15,14 @@ public enum ResultEnum {
     ;
     private Integer code;
 
-    private String messahe;
+    private String message;
 
     ResultEnum() {
     }
 
-    ResultEnum(Integer code, String messahe) {
+    ResultEnum(Integer code, String message) {
         this.code = code;
-        this.messahe = messahe;
+        this.message = message;
     }
 
     public Integer getCode() {
@@ -33,11 +33,11 @@ public enum ResultEnum {
         this.code = code;
     }
 
-    public String getMessahe() {
-        return messahe;
+    public String getMessage() {
+        return message;
     }
 
-    public void setMessahe(String messahe) {
-        this.messahe = messahe;
+    public void setMessage(String message) {
+        this.message = message;
     }
 }
