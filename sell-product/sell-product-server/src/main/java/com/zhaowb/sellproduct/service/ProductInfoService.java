@@ -3,7 +3,6 @@ package com.zhaowb.sellproduct.service;
 import com.zhaowb.sellproduct.entity.ProductInfo;
 import com.zhaowb.sellproductcommon.DecreaseStockInput;
 import com.zhaowb.sellproductcommon.ProductInfoOutput;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -13,7 +12,6 @@ import java.util.List;
  * @author zhaowb
  * @date 2018/11/23 16:16
  */
-@Service
 public interface ProductInfoService {
     /**
      * 查询所有在架商品列表

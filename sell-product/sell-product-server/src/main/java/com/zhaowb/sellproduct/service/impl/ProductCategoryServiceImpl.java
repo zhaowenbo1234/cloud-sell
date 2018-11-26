@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created with IDEA
@@ -21,7 +22,7 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
     private ProductCategoryRepository productCategoryRepository;
 
     @Override
-    public List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTypeList) {
+    public List<ProductCategory> findByCategoryTypeIn(Set<Integer> categoryTypeList) {
         return productCategoryRepository.findByCategoryTypeIn(categoryTypeList);
     }
 }
