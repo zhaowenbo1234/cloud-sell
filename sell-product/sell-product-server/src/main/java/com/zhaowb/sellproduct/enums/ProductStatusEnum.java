@@ -10,8 +10,8 @@ package com.zhaowb.sellproduct.enums;
 public enum ProductStatusEnum {
 
 
-    PRODUCT_NOT_EXIST(1, "商品不存在"),
-    PRODUCT_STOCK_ERROR(2, "库存有误"),
+    UP(0, "在架"),
+    DOWN(1, "下架"),
     ;
     private Integer code;
     private String message;
