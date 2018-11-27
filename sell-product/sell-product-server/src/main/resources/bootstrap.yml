@@ -12,6 +12,11 @@ spring:
     username: root
     password: 308539393
     url: jdbc:mysql://localhost:3306/sell?characterEncoding=utf-8&useSSL=false
+  rabbitmq:
+    host: 192.168.146.130
+    username: zhaowb # 设置的远程可登陆用户，如果是本机，默认的guest，即可不进行配置，账号密码，
+    password: 123
+    port: 5672 # 端口号 ，不是网页登陆的端口号（15672），
 #eureka:
 #  client:
 server:
