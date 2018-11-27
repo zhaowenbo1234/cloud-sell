@@ -12,6 +12,7 @@ import com.zhaowb.sellproductcommon.DecreaseStockInput;
 import com.zhaowb.sellproductcommon.ProductInfoOutput;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -81,21 +82,30 @@ public class ProductController {
 
     /**
      * 获取商品列表(给订单服务用的)
-     *
+     * 调用示例["157875196366160022","164103465734242707"]
      * @param productIdList 商品ID列表
      * @return List<ProductInfoOutput>
      */
-    @RequestMapping("/listForOrder")
+    @PostMapping("/listForOrder")
     public List<ProductInfoOutput> listForOrder(@RequestBody List<String> productIdList) {
         return productInfoService.findList(productIdList);
     }
 
     /**
      * 减库存
+     * 前端调用例子
+     *[{
+     *         "productId":"157875196366160022",
+     *                 "productQuantity":3
      *
+     *     },
+     *     {
+     *         "productId":"164103465734242707",
+     *             "productQuantity":3
+     *     }]
      * @param decreaseStockInputList 商品待减库存列表
      */
-    @RequestMapping("/decreaseStock")
+    @PostMapping("/decreaseStock")
     public void decreaseStock(@RequestBody List<DecreaseStockInput> decreaseStockInputList) {
         productInfoService.decreaseStock(decreaseStockInputList);
     }
