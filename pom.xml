@@ -11,11 +11,13 @@
         <module>sell-eureka</module>
         <module>sell-config</module>
         <module>sell-product</module>
+        <module>sell-order</module>
+        <module>sell-user</module>
     </modules>
     <packaging>pom</packaging>
 
     <name>cloud-sell</name>
-    <description>简单购物系统</description>
+    <description>简单点餐系统</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
