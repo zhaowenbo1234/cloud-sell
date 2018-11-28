@@ -12,11 +12,25 @@
 
     <artifactId>sell-product</artifactId>
     <packaging>pom</packaging>
+
+    <properties>
+        <product-common.version>0.0.1-SNAPSHOT</product-common.version>
+    </properties>
+
     <modules>
         <module>sell-product-server</module>
         <module>sell-product-client</module>
         <module>sell-product-common</module>
     </modules>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.zhaowb</groupId>
+                <artifactId>sell-product-common</artifactId>
+                <version>${product-common.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 </project>
