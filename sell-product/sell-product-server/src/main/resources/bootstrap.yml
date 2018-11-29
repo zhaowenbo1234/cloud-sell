@@ -1,12 +1,12 @@
 spring:
   application:
     name: sell-product-server
-#  cloud:
-#    config:
-#      discovery:
-#        service-id: sell-config
-#        enabled: true
-#      profile: dev
+  cloud:
+    config:
+      discovery:
+        service-id: sell-config
+        enabled: true
+      profile: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
@@ -17,8 +17,9 @@ spring:
     username: zhaowb # 设置的远程可登陆用户，如果是本机，默认的guest，即可不进行配置，账号密码，
     password: 123
     port: 5672 # 端口号 ，不是网页登陆的端口号（15672），
-#eureka:
-#  client:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
 server:
   port: 8762
-#    service-url: http://localhost:8761/eureka/
