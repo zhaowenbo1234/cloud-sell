@@ -12,7 +12,7 @@ public class OrderException extends RuntimeException{
 
     private Integer code;
 
-    public OrderException(String message, Integer code) {
+    public OrderException( Integer code,String message) {
         super(message);
         this.code = code;
     }

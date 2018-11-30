@@ -45,7 +45,7 @@ public class OrderServiceImpl implements OrderService {
         String orderId = KeyUtil.genUniqueKey();
 
         // 查询商品信息（调用商品服务）
-        List<String> productIdList = orderDTO.getOrderDetailList().stream().map(OrderDetail::getOrderId)
+        List<String> productIdList = orderDTO.getOrderDetailList().stream().map(OrderDetail::getProductId)
                 .collect(Collectors.toList());
         List<ProductInfoOutput> productInfoOutputList = sellProductClient.listForOrder(productIdList);
 
@@ -73,6 +73,7 @@ public class OrderServiceImpl implements OrderService {
         OrderMaster orderMaster = new OrderMaster();
         orderDTO.setOrderId(orderId);
         BeanUtils.copyProperties(orderDTO, orderMaster);
+        orderMaster.setOrderAmount(orderAmount);
         orderMaster.setOrderStatus(OrderStatusEnum.NEW.getCode());
         orderMaster.setPayStatus(PayStatusEnum.WAIT.getCode());
         orderMasterRepository.save(orderMaster);
