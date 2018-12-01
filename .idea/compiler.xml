@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="sell-api-gateway" />
         <module name="sell-config" />
         <module name="sell-eureka" />
+        <module name="sell-order-client" />
+        <module name="sell-order-common" />
+        <module name="sell-order-server" />
         <module name="sell-product-client" />
         <module name="sell-product-common" />
         <module name="sell-product-server" />
@@ -15,8 +19,13 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloud-sell" target="1.8" />
+      <module name="sell-api-gateway" target="1.8" />
       <module name="sell-config" target="1.8" />
       <module name="sell-eureka" target="1.8" />
+      <module name="sell-order" target="1.8" />
+      <module name="sell-order-client" target="1.8" />
+      <module name="sell-order-common" target="1.8" />
+      <module name="sell-order-server" target="1.8" />
       <module name="sell-product" target="1.8" />
       <module name="sell-product-client" target="1.8" />
       <module name="sell-product-common" target="1.8" />
@@ -25,10 +34,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="cloud-sell" options="-parameters" />
+      <module name="sell-api-gateway" options="-parameters" />
       <module name="sell-config" options="-parameters" />
       <module name="sell-eureka" options="-parameters" />
-      <module name="sell-product" options="-parameters" />
+      <module name="sell-order-client" options="-parameters" />
+      <module name="sell-order-common" options="-parameters" />
+      <module name="sell-order-server" options="-parameters" />
       <module name="sell-product-client" options="-parameters" />
       <module name="sell-product-common" options="-parameters" />
       <module name="sell-product-server" options="-parameters" />

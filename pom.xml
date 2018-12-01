@@ -12,7 +12,7 @@
         <module>sell-config</module>
         <module>sell-product</module>
         <module>sell-order</module>
-        <module>sell-user</module>
+        <module>sell-api-gateway</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -12,10 +12,30 @@
     <artifactId>sell-order</artifactId>
     <packaging>pom</packaging>
     <description>订单模块</description>
+
+    <properties>
+        <product-client.version>0.0.1-SNAPSHOT</product-client.version>
+        <order-common.version>0.0.1-SNAPSHOT</order-common.version>
+    </properties>
     <modules>
         <module>sell-order-server</module>
         <module>sell-order-common</module>
         <module>sell-order-client</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.zhaowb</groupId>
+                <artifactId>sell-product-client</artifactId>
+                <version>${product-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zhaowb</groupId>
+                <artifactId>sell-order-common</artifactId>
+                <version>${order-common.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
